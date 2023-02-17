@@ -16,35 +16,46 @@
 
 
 #home {
-  margin: 10px;
+  width: 80;
+  margin: 1rem auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.leftHome {
+.leftH {
   width: 500px;
 }
 
-.leftHome h3 {
+.leftH h3 {
   color: #de2639;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
   text-transform: uppercase;
 }
 
-.leftHome h2 {
+.leftH a {
+  color: rgb(106, 102, 102);
+}
+
+li {
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.leftH h2 {
   color: rgb(26, 25, 25);
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .desc {
   margin-bottom: 1rem;
-  color: rgb(18, 18, 19);
+  color: rgb(106, 102, 102);
   text-align: justify;
 }
 
-.rightHome {
+.rightH {
   width: 50%;
   margin: 1rem;
   position: relative;
@@ -52,69 +63,29 @@
 }
 
 
-legend {
-  background-color: #de2639;
-  color: #fff;
-  padding: 3px 6px;
-  border-radius: 50px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-}
 
-
-li {
-  text-align: left;
-  color: rgb(22, 7, 36);
-  margin-left: 10px;
-  margin-bottom: 10px;
-  list-style-type: none;
-}
-
-li a {
-  color: rgb(22, 7, 36);
-  ;
-}
-
-
-footer a {
-  color: #333;
-  text-decoration: none;
-  font-size: 1em;
-  margin: 10px;
-}
-
-
-
-footer a:hover {
-  color: #1DA1F2;
-}
-
-footer i {
-  margin-right: 5px;
-  color: rgb(22, 7, 36);
-}
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:810px) {
   #home {
     flex-direction: column-reverse;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .rightHome {
+  .rightH {
     width: 900;
     border-radius: 50px;
-    text-align: justify;
   }
 
-  .leftHome {
+  .leftH {
     margin: 0;
     width: 100%;
   }
 
-  .leftHome h3 {
+  .leftH h3 {
     font-size: 1rem;
   }
 
-  .leftHome h2 {
+  .leftH h2 {
     font-size: 2rem;
   }
 
