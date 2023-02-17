@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Ubuntu:wght@500;700&display=swap');
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
@@ -35,7 +34,7 @@
 }
 
 .leftH a {
-  color: rgb(106, 102, 102);
+  color: rgb(22, 7, 36);
 }
 
 li {
@@ -44,7 +43,7 @@ li {
 }
 
 .leftH h2 {
-  color: rgb(26, 25, 25);
+  color: rgb(22, 7, 36);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
