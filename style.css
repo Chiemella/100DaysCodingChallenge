@@ -16,7 +16,7 @@
 
 
 #home {
-  width: 80;
+  width: 80%;
   margin: 1rem auto;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .leftH {
-  width: 500px;
+  width: 450px;
 }
 
 .leftH h3 {
@@ -64,16 +64,14 @@ li {
 
 
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:768px) {
   #home {
     flex-direction: column-reverse;
-    margin-left: 10px;
-    margin-right: 10px;
+
   }
 
   .rightH {
-    width: 900;
-    border-radius: 50px;
+    width: 350px;
   }
 
   .leftH {
