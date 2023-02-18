@@ -10,22 +10,21 @@
 
 .navbar {
   line-height: 5rem;
-  margin-bottom: 50px;
   text-align: center;
   background-color: rgb(22, 7, 36);
 }
 
 
 #home {
-  width: 80%;
-  margin: 1rem auto;
+  width: 90%;
+  margin: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .leftH {
-  width: 450px;
+  width: 400px;
 }
 
 .leftH h3 {
@@ -69,12 +68,6 @@ li {
   #home {
     flex-direction: column-reverse;
     width: 90%;
-  }
-
-  .navbar {
-
-    margin-bottom: 0px;
-
   }
 
   .rightH {
