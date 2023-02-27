@@ -1,1 +1,1 @@
-# 100DaysCodingChallenge project
+# 100DaysCodingChallenge
