@@ -77,3 +77,12 @@ body {
 .eraser.active {
     transform: translateX(-100%);
 }
+
+@media (max-width: 768px) {
+
+    .slider {
+        height: 70vh;
+        width: 95vw;
+    }
+
+}
