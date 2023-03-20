@@ -79,6 +79,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
 
     .slider {
         height: 70vh;
