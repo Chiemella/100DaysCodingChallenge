@@ -88,4 +88,8 @@ body {
         width: 95vw;
     }
 
+    .slide .info {
+      width: 300px;
+    }
+
 }
