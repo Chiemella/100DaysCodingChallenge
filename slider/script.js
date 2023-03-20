@@ -2,7 +2,7 @@ const slides = document.querySelectorAll(".slider-container .slide"); // get all
 const eraser = document.querySelector(".eraser"); // the eraser
 const prev = document.getElementById("previous"); // previous button
 const next = document.getElementById("next"); // next button
-const intervalTime = 5000; // time until nextSlide triggers in miliseconds
+const intervalTime = 5000; // time until nextSlide triggers in millisecond
 const eraserActiveTime = 700; // time to wait until the .eraser goes all the way
 let sliderInterval; // variable used to save the setInterval and clear it when needed
 
