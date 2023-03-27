@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(91, 55, 183, 1);
+  font-family: 'Lato', sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: background 0.4s linear;
+
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+}
+
+.tab-nav-container {
+  background-color: #fff;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: 450px;
+}
+
+.tab {
+  background-color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0 10px;
+  transition: background 0.4s linear;
+}
+
+.tab i {
+  font-size: 1.2em;
+}
+
+.tab p {
+  font-weight: bold;
+  overflow: hidden;
+  max-width: 0;
+}
+
+.tab.active p {
+  margin-left: 10px;
+  max-width: 200px;
+  transition: max-width 0.4s linear;
+}
+
+.tab.active.purple {
+  background-color: rgba(91, 55, 183, 0.2);
+  color: rgba(91, 55, 183, 1);
+}
+
+.tab.active.pink {
+  background-color: rgba(201, 55, 157, 0.2);
+  color: rgba(201, 55, 157, 1);
+}
+
+.tab.active.yellow {
+  background-color: rgba(230, 169, 25, 0.2);
+  color: rgba(230, 169, 25, 1);
+}
+
+.tab.active.teal {
+  background-color: rgba(28, 150, 162, 0.2);
+  color: rgba(28, 150, 162, 1);
+}
+
+@media (max-width: 450px) {
+  .tab-nav-container {
+    padding: 20px;
+    width: 350px;
+  }
+
+  .tab {
+    padding: 0 10px;
+    margin: 0;
+  }
+
+  .tab i {
+    font-size: 1em;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer i {
+  color: red;
+}
+
+footer a {
+  color: #3c97bf;
+  text-decoration: none;
+}
