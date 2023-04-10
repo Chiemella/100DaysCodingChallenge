@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0 0 50px;
+}
+
+.accordion {
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.accordion-item {
+  background-color: #fff;
+  cursor: pointer;
+  width: 400px;
+}
+
+.accordion-item h3 {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 20px 15px;
+  position: relative;
+}
+
+.accordion-item:nth-child(1) h3 {
+  background-color: #89CFF0;
+}
+
+.accordion-item:nth-child(2) h3 {
+  background-color: #87CEEB;
+}
+
+.accordion-item:nth-child(3) h3 {
+  background-color: #6495ED;
+}
+
+.accordion-item:nth-child(4) h3 {
+  background-color: #000080;
+}
+
+.accordion-item:nth-child(5) h3 {
+  background-color: #191970;
+}
+
+.accordion-item h3::after {
+  content: '\f078';
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%) rotate(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item.open h3::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion-item p {
+  display: none;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 15px;
+  text-align: justify;
+}
+
+.accordion-item.open p {
+  display: block;
+}
+
