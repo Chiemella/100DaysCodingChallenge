@@ -1,0 +1,50 @@
+body {
+  background: rebeccapurple;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+p {
+  font-size: 7rem;
+}
+
+button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+  button {
+    background: red;
+  }
+}
+
+.heart {
+  position: fixed;
+  top: -1vh;
+  animation: fall 5s linear forwards;
+}
+
+.heart-big {
+  font-size: 5rem;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(102vh);
+  }
+}
