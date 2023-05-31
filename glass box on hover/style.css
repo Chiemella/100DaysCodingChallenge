@@ -1,0 +1,38 @@
+body {
+  background-color: #222;
+  font-family: "Poppins";
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  background-color: rgb(65, 65, 228);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass {
+  background: linear-gradient(0deg, transparent, #fff, transparent);
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  opacity: 0.2;
+  transform: translate(-200px, -200px) rotate(-45deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover .glass {
+  transform: translate(200px, 200px) rotate(-45deg);
+}
