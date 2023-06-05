@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.loader-container {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+.loader {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  animation: rotate 4s ease-in-out infinite;
+  position: absolute;
+}
+
+.load-1 {
+  border-top-color: rebeccapurple;
+  height: 200px;
+  width: 200px;
+  top: 0;
+  left: 0;
+}
+
+.load-2 {
+  border-top-color: orangered;
+  height: 250px;
+  width: 250px;
+  top: -25px;
+  left: -25px;
+  animation-duration: 2s;
+}
+
+.load-3 {
+  border-top-color: blue;
+  height: 300px;
+  width: 300px;
+  top: -50px;
+  left: -50px;
+  animation-duration: 1s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
