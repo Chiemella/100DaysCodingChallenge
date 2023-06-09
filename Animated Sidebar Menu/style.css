@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('https://images.unsplash.com/photo-1566321526629-d4abadc2085e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2286&q=80');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	margin: 0;
+}
+
+nav {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 30px 0 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: transform .4s ease;
+}
+
+nav.active {
+	transform: translateX(0);
+}
+
+nav ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul li {
+	margin: 14px 0;
+	text-align: right;
+}
+
+nav a {
+	color: #111;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #d35400;
+}
+
+.toggle {
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0;
+	right: 1px;
+	transform: translateX(100%);
+}
+
+.toggle:focus {
+	outline: none;
+}
+
+.toggle .fa-bars {
+	display: block;
+}
+
+.toggle .fa-times {
+	display: none;
+}
+
+nav.active .toggle .fa-bars {
+	display: none;
+}
+
+nav.active .toggle .fa-times {
+	display: block;
+}
