@@ -1,35 +1,20 @@
-const slides = document.querySelectorAll(".slide");
-const controls = document.querySelectorAll(".control");
-let activeSlide = 0;
-let prevActive = 0;
+const circles = document.querySelectorAll(".circle");
 
-changeSlides();
-let int = setInterval(changeSlides, 4000);
+circles.forEach((circle, idx) => {
+  circle.style.borderWidth = (idx + 1) * 10 + "px";
+  circle.style.zIndex = -idx;
+  circle.style.animationName = `rotate-${idx}`;
 
-function changeSlides() {
-  slides[prevActive].classList.remove("active");
-  controls[prevActive].classList.remove("active");
+  const deg = (idx + 1) * 360;
 
-  slides[activeSlide].classList.add("active");
-  controls[activeSlide].classList.add("active");
+  const style = document.createElement("style");
+  style.innerHTML = `
+		@keyframes rotate-${idx} {
+			to {
+				transform: translate(-50%, -50%) rotate(${deg}deg);
+			}
+		}
+	`;
 
-  prevActive = activeSlide++;
-
-  if (activeSlide >= slides.length) {
-    activeSlide = 0;
-  }
-
-  console.log(prevActive, activeSlide);
-}
-
-controls.forEach((control) => {
-  control.addEventListener("click", () => {
-    let idx = [...controls].findIndex((c) => c === control);
-    activeSlide = idx;
-
-    changeSlides();
-
-    clearInterval(int);
-    int = setInterval(changeSlides, 4000);
-  });
+  document.body.appendChild(style);
 });
