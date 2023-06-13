@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+button {
+  background-color: darksalmon;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 8px 25px;
+  margin-top: 10px;
+}
