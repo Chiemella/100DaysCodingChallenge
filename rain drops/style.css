@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #30336b;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  animation: grow 3s linear;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes grow {
+  to {
+    opacity: 0;
+    transform: scale(5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Add your styles here for screens with a maximum width of 768px */
+  body {
+    overflow: auto;
+  }
+
+  .circle {
+    height: 30px;
+    width: 30px;
+  }
+}
