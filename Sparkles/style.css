@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+h2 {
+  color: #fff;
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  text-align: center;
+}
+
+
+ /* Media query for screens with a maximum width of 768 pixels */
+ @media (max-width: 768px) {
+   h2 {
+     font-size: 20px;
+   }
+ }
+
+ /* Media query for screens with a minimum width of 1200 pixels */
+ @media (min-width: 1200px) {
+   h2 {
+     font-size: 30px;
+   }
+ }
