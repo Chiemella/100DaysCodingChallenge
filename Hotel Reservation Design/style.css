@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+body::after {
+	background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	content: '';
+	filter: blur(5px);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+}
+
+.panel-container {
+	background-color: #222;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	display: flex;
+	height: 70vh;
+	width: 70vw;
+	max-width: 800px;
+}
+
+.left {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	position: relative;
+	width: calc(50% - 10px);
+}
+
+.left h2 {
+	margin: 0;
+}
+
+.left h3 {
+	border-bottom: 1px solid #333;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 30px 0 0;
+}
+
+.left p {
+	color: #8e44ad;
+	font-weight: 500;
+	font-size: 13px;
+	margin: 3px 0;
+}
+
+.left button {
+	background-color: transparent;
+	border: 1px solid #8e44ad;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 500;
+	padding: 15px 30px;
+	margin-top: auto;
+}
+
+.left::after {
+	border-top: 0 solid transparent;
+	border-bottom: 70vh solid transparent;
+	border-left: 30px solid #222;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 0%;
+	width: 0;
+}
+
+.right {
+	background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: calc(50% + 20px);
+}
+
+@media screen and (max-width: 700px) {
+	.left {
+		width: 100%;
+	}
+	
+	.left::after {
+		display: none;
+	}
+	
+	.left h3 {
+		margin-top: 20px;
+	}
+	
+	.right {
+		display: none;
+	}
+}
