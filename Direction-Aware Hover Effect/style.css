@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1474310393803-fffb52bf17cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Muli';
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+  width: 100%;
+}
+
+.cards-container:hover .card {
+  transform: rotateY(30deg);
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  height: 300px;
+  transition: transform 0.2s ease-in-out;
+  width: 20%;
+  min-width: 100px;
+}
+
+.card:hover {
+  transform: rotateY(0deg) !important;
+}
+
+.card:hover~.card {
+  transform: rotateY(-30deg);
+}
+
+.card:nth-of-type(1) {
+  background-image: url('https://images.unsplash.com/photo-1532910404247-7ee9488d7292?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80');
+}
+
+.card:nth-of-type(2) {
+  background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+}
+
+.card:nth-of-type(3) {
+  background-image: url('https://images.unsplash.com/photo-1523661149972-0becaca2016e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=614&q=80');
+}
+
+.card:nth-of-type(4) {
+  background-image: url('https://images.unsplash.com/photo-1522609925277-66fea332c575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+}
+
+.card:nth-of-type(5) {
+  background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+}
+
+@media screen and (max-width: 756px) {
+
+  .card:nth-of-type(4),
+  .card:nth-of-type(5) {
+    display: none;
+  }
+}
