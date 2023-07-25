@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #FFFAF0;
+  color: #333;
+  display: flex;
+  font-family: 'Courier Prime', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #7B341E;
+  font-size: 300px;
+  margin: 0;
+  letter-spacing: 10px;
+  line-height: 230px;
+}
+
+h1 i {
+  font-size: 200px;
+  position: relative;
+  top: -20px;
+}
+
+h2 {
+  font-size: 65px;
+  margin: 0;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 150px;
+    line-height: 120px;
+  }
+
+  h1 i {
+    font-size: 100px;
+    top: -10px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .text {
+    max-width: 80vw;
+  }
+}
