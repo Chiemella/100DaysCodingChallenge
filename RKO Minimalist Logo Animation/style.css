@@ -1,0 +1,145 @@
+.hitloadercontainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  position: sticky;
+  top: 0;
+}
+
+.hitloader {
+  --animation-duration: 5000ms;
+  position: relative;
+  width: 125px;
+  height: 125px;
+  /*     transform: rotate(45deg); */
+}
+
+.hitloader .scwrap {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.hitloader .scwrap .spinner-item {
+  width: 100%;
+  height: 100%;
+}
+
+.hitloader .scwrap:nth-child(1) .spinner-item {
+  background-color: #faaf31;
+}
+
+.hitloader .scwrap:nth-child(2) .spinner-item {
+  background-color: #c6d154;
+}
+
+.hitloader .scwrap:nth-child(3) .spinner-item {
+  background-color: #f2db0d;
+}
+
+.hitloader .scwrap:nth-child(1) {
+  top: 0;
+  left: 0;
+  animation: spinner3A var(--animation-duration) linear infinite;
+}
+
+@keyframes spinner3A {
+
+  0%,
+  8.33%,
+  16.66%,
+  100% {
+    transform: translate(0%, 0%);
+  }
+
+  24.99%,
+  33.32%,
+  41.65% {
+    transform: translate(100%, 0%);
+  }
+
+  49.98%,
+  58.31%,
+  66.64% {
+    transform: translate(100%, 100%);
+  }
+
+  74.97%,
+  83.30%,
+  91.63% {
+    transform: translate(0%, 100%);
+  }
+}
+
+.hitloader .scwrap:nth-child(2) {
+  top: 0;
+  left: 50px;
+  animation: spinner3B var(--animation-duration) linear infinite;
+}
+
+@keyframes spinner3B {
+
+  0%,
+  8.33%,
+  91.63%,
+  100% {
+    transform: translate(0%, 0%);
+  }
+
+  16.66%,
+  24.99%,
+  33.32% {
+    transform: translate(0%, 100%);
+  }
+
+  41.65%,
+  49.98%,
+  58.31% {
+    transform: translate(-100%, 100%);
+  }
+
+  66.64%,
+  74.97%,
+  83.30% {
+    transform: translate(-100%, 0%);
+  }
+}
+
+.hitloader .scwrap:nth-child(3) {
+  top: 50px;
+  left: 50px;
+  animation: spinner3C var(--animation-duration) linear infinite;
+}
+
+@keyframes spinner3C {
+
+  0%,
+  83.30%,
+  91.63%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  8.33%,
+  16.66%,
+  24.99% {
+    transform: translate(-100%, 0);
+  }
+
+  33.32%,
+  41.65%,
+  49.98% {
+    transform: translate(-100%, -100%);
+  }
+
+  58.31%,
+  66.64%,
+  74.97% {
+    transform: translate(0, -100%);
+  }
+}
