@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Animated CSS Grid (grid-template-rows_grid-template-columns)</title>
+</head>
+
+<body>
+  <p>Hover me ↓</p>
+  <div class="avatars">
+    <a href="https://twitter.com/bramus/" title="Bramus on Twitter" target="_top"><img alt="Profile image for Bramus"
+        class="avatar" decoding="async" height="96" loading="lazy" sizes="(min-width: 96px) 96px, calc(100vw - 48px)"
+        src="https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format"
+        srcset="https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format&amp;w=96 96w,     https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format&amp;w=109 109w,     https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format&amp;w=125 125w,     https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format&amp;w=142 142w,     https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format&amp;w=162 162w,     https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format&amp;w=185 185w,     https://web-dev.imgix.net/image/AeNB0cHNDkYPUYzDuv8gInYA9rY2/CQMqvg5UkY4weDnJij3b.jpeg?auto=format&amp;w=192 192w"
+        width="96"></a>
+    <a href="https://twitter.com/jh3yy/" title="Jhey on Twitter" target="_top"><img
+        alt="Profile image for Jhey Tompkins" class="avatar" decoding="async" height="96" loading="lazy"
+        sizes="(min-width: 96px) 96px, calc(100vw - 48px)"
+        src="https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format"
+        srcset="https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format&amp;w=96 96w,     https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format&amp;w=109 109w,     https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format&amp;w=125 125w,     https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format&amp;w=142 142w,     https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format&amp;w=162 162w,     https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format&amp;w=185 185w,     https://web-dev.imgix.net/image/Dyx9FwYgMyNqy1kMGx8Orz6q0qC3/JjwUlxDMTmjyFEvBC8wG.jpeg?auto=format&amp;w=192 192w"
+        width="96"></a>
+    <a href="https://twitter.com/una/" title="Una on Twitter" target="_top"><img alt="Profile image for Una Kravets"
+        class="avatar" decoding="async" height="96" loading="lazy" sizes="(min-width: 96px) 96px, calc(100vw - 48px)"
+        src="https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format"
+        srcset="https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format&amp;w=96 96w,     https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format&amp;w=109 109w,     https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format&amp;w=125 125w,     https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format&amp;w=142 142w,     https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format&amp;w=162 162w,     https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format&amp;w=185 185w,     https://web-dev.imgix.net/image/admin/c4bzyDkOZ9MhBaqp0HfW.jpg?auto=format&amp;w=192 192w"
+        width="96"></a>
+    <a href="https://twitter.com/argyleink/" title="Adam on Twitter" target="_top"><img
+        alt="Profile image for Adam Argyle" class="avatar" decoding="async" height="96" loading="lazy"
+        sizes="(min-width: 96px) 96px, calc(100vw - 48px)"
+        src="https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format"
+        srcset="https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format&amp;w=96 96w,     https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format&amp;w=109 109w,     https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format&amp;w=125 125w,     https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format&amp;w=142 142w,     https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format&amp;w=162 162w,     https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format&amp;w=185 185w,     https://web-dev.imgix.net/image/admin/jdQIxAJrGuFOtwmuDfIn.jpg?auto=format&amp;w=192 192w"
+        width="96"></a>
+  </div>
+  <div class="warning">
+    <p>ℹ️ You are using Chrome but need at least version 107 to check this demo</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
