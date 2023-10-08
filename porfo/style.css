@@ -7,7 +7,7 @@
 }
 
 body {
-	/* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+	background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 
 	display: flex;
 	align-items: center;
@@ -30,13 +30,26 @@ body {
 	color: rgb(255, 102, 89);
 }
 
+
 .top {
 	line-height: 2rem;
 	text-align: center;
 	background-color: rgb(22, 7, 36);
 	width: 100%;
 	color: #fff;
-	padding: 25px 0 25px 0;
+	padding: 24px 0 24px 0;
+	position: sticky;
+	top: 0;
+	/* Stick to the top */
+	z-index: 100;
+	/* Ensures it's on top of other elements */
+}
+
+/* Add this class to the navbar when it becomes sticky */
+.top.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .portfolio-container {
