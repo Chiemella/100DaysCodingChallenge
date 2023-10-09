@@ -2,84 +2,109 @@
 
 A simple landing page I created to document my 100DaysCodeChallenge process.
 
-100 days Coding Challenge
-Day1 -
-Day2 -
-Day3 -
-Day4 -
-Day5 -
-Day6 -
-Day7 -
-Day8 -
-Day9 -
-Day10 -
-Day11 -
-Day12 -
-Day13 -
-Day14 -
-Day15 -
-Day16 -
-Day17 -
-Day18 -
-Day19 -
-Day20 -
-Day21 -
-Day22 -
-Day23 - Push Notifications
-Day24 - Glass Box on Hover
-Day25 - Custom Counter
-Day26 - Hover Board
-Day27 - PayPal's Loading Circle of Death
-Day28 - CSS Heart
-Day29 - Memory Card Game
-Day30 - Custom Loading Animation
-Day31 - Moving Stars in Universe
-Day32 - Scroll Animation JavaScript
-Day33 - Pretty Modal
-Day34 - Responsive Navigation with Animations
-Day35 - Animated Sidebar Menu
-Day36 - Rotating Circle Animation
-Day37 - CSS Triangle
-Day38 - Random Image Generator
-day39 - ThreeD(ish) button
-day40 - rain drops
-Day41 - blurry loading
-Day42 - Traffic Lights
-Day43 - Breadcrumbs
-Day44 - Invoice Design
-Day45 - Steps
-Day46 - Sparkles
-day47 - Social Links
-Day48 - Background Slider
-Day49 - Auto Text Effect
-day50 - Donate Design
-Day51 - Kinetic Loader
-day52 - Hotel Reservation Design
-Day53 - Form Validation
-Day54 - Moving Hamburger Animation
-Day55 - Infinite Scrolling
-Day56 - Letter Animation
-Day57 - Fun Waving Animation
-Day58 - CSS Custom Checkbox
-Day59 - Course Card UI Design
-Day60 - Digital Block Clock
-Day61 - Pulse Effect
-Day62 - Background Animations
-Day63 - Direction-Aware Hover Effect
-Day64 - Workout Tracker Design
-Day65 - 404 page
-Day66 - Mouse-Based-Parallax Sunset
-Day67 - Square Shuffle Loader
-Day68 - Slide Signin/Signup Form
-Day69 - Pop up labels when Typing with :placeholder-shown
-Day70 - image duplicate
-Day71 - Animated CSS Grid (grid-template-rows / grid-template-columns)
-Day72 - llist
-Day73 - Square Shuffle Loader
-Day74 - chippy checkbox inputs
-Day75 - Images Card UI with Nice Transition
-Day76 - css filter
-Day77 -
-Day78 -
-Day79 -
-Day80 -
+## 100 days Coding Challenge
+
+- [x] Day1 - Buy me
+- [x] Day2 - Navbar
+- [x] Day3 - Sign In and Sign Up Form
+- [x] Day4 - Auto Animal Slide
+- [x] Day5 - Colorful_Navbar
+- [x] Day6 - Inter wind Loading Animation
+- [x] Day7 - Chat Interface
+- [x] Day8 - Modal
+- [x] Day9 - Accordion
+- [x] Day10 - CSS Tooltip
+- [x] Day11 - Toggle
+- [x] Day12 - Progress Bar
+- [x] Day13 - Notification
+- [x] Day14 - Pagination Component
+- [x] Day15 - Social Media Icons
+- [x] Day16 - Testimonial
+- [x] Day17 - Review
+- [x] Day18 - Loading Animation
+- [x] Day19 - Animated NavBar
+- [x] Day20 - Gravity Switch
+- [x] Day21 - Contact Page
+- [x] Day22 - Push Notification
+- [x] Day23 - Push Notifications
+- [x] Day24 - Glass Box on Hover
+- [x] Day25 - Custom Counter
+- [x] Day26 - Hover Board
+- [x] Day27 - PayPal's Loading Circle of Death
+- [x] Day28 - CSS Heart
+- [x] Day29 - Memory Card Game
+- [x] Day30 - Custom Loading Animation
+- [x] Day31 - Moving Stars in Universe
+- [x] Day32 - Scroll Animation JavaScript
+- [x] Day33 - Pretty Modal
+- [x] Day34 - Responsive Navigation with Animations
+- [x] Day35 - Animated Sidebar Menu
+- [x] Day36 - Rotating Circle Animation
+- [x] Day37 - CSS Triangle
+- [x] Day38 - Random Image Generator
+- [x] Day39 - ThreeD(ish) button
+- [x] Day40 - Rain Drops
+- [x] Day41 - Blurry Loading
+- [x] Day42 - Traffic Lights
+- [x] Day43 - Breadcrumbs
+- [x] Day44 - Invoice Design
+- [x] Day45 - Steps
+- [x] Day46 - Sparkles
+- [x] Day47 - Social Links
+- [x] Day48 - Background Slider
+- [x] Day49 - Auto Text Effect
+- [x] Day50 - Donate Design
+- [x] Day51 - Kinetic Loader
+- [x] Day52 - Hotel Reservation Design
+- [x] Day53 - Form Validation
+- [x] Day54 - Moving Hamburger Animation
+- [x] Day55 - Infinite Scrolling
+- [x] Day56 - Letter Animation
+- [x] Day57 - Fun Waving Animation
+- [x] Day58 - CSS Custom Checkbox
+- [x] Day59 - Course Card UI Design
+- [x] Day60 - Digital Block Clock
+- [x] Day61 - Pulse Effect
+- [x] Day62 - Background Animations
+- [x] Day63 - Direction-Aware Hover Effect
+- [x] Day64 - Workout Tracker Design
+- [x] Day65 - 404 page
+- [x] Day66 - Mouse-Based-Parallax Sunset
+- [x] Day67 - Square Shuffle Loader
+- [x] Day68 - Slide Signin/Signup Form
+- [x] Day69 - Pop up labels when Typing with :placeholder-shown
+- [x] Day70 - Image Duplicate
+- [x] Day71 - Animated CSS Grid (grid-template-rows / grid-template-columns)
+- [x] Day72 - List
+- [x] Day73 - Square Shuffle Loader
+- [x] Day74 - Chippy Checkbox Inputs
+- [x] Day75 - Images Card UI with Nice Transition
+- [x] Day76 - CSS Filter
+- [x] Day77 -
+- [x] Day78 -
+- [x] Day79 -
+- [x] Day80 -
+- [x] Day77 -
+- [x] Day78 -
+- [x] Day79 -
+- [x] Day80 -
+- [x] Day81 -
+- [x] Day82 -
+- [x] Day83 -
+- [x] Day84 -
+- [x] Day85 -
+- [x] Day86 -
+- [x] Day87 -
+- [x] Day88 -
+- [x] Day89 -
+- [x] Day90 -
+- [x] Day91 -
+- [x] Day92 -
+- [x] Day93 -
+- [x] Day94 -
+- [x] Day95 -
+- [x] Day96 -
+- [x] Day97 -
+- [x] Day98 -
+- [x] Day99 -
+- [x] Day100 -
